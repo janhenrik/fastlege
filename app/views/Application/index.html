@@ -1,4 +1,10 @@
 #{extends 'main.html' /}
-#{set title:'Home' /}
+#{set title:'Fastlege' /}
 
-#{welcome /}
+#{list items:fastleger, as:'lege'}
+        ${lege.navn},
+#{/list}
+
+
+
+

@@ -62,7 +62,7 @@
       <file leaf-file-name="Application.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="200" selection-end="200" vertical-scroll-proportion="0.19094767">
+            <state line="18" column="23" selection-start="269" selection-end="269" vertical-scroll-proportion="0.27581328">
               <folding />
             </state>
           </provider>
@@ -82,7 +82,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="21" selection-start="60" selection-end="60" vertical-scroll-proportion="-1.875">
+            <state line="3" column="0" selection-start="52" selection-end="118" vertical-scroll-proportion="-1.875">
               <folding />
             </state>
           </provider>
@@ -91,7 +91,7 @@
       <file leaf-file-name="Person.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="14" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
+            <state line="13" column="14" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,7 +111,7 @@
       <file leaf-file-name="FastlegeOnske.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/FastlegeOnske.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="13" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
+            <state line="9" column="14" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,7 +122,7 @@
       <file leaf-file-name="Fastlege.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Fastlege.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="7" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+            <state line="12" column="30" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,7 +133,7 @@
       <file leaf-file-name="Kjonn.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Kjonn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="12" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+            <state line="2" column="18" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -168,14 +168,15 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/fastlege.iml" />
-        <option value="$PROJECT_DIR$/app/controllers/Application.java" />
         <option value="$PROJECT_DIR$/app/models/Doctor.java" />
-        <option value="$PROJECT_DIR$/app/models/Kjonn.java" />
         <option value="$PROJECT_DIR$/conf/application.conf" />
-        <option value="$PROJECT_DIR$/app/models/Fastlege.java" />
-        <option value="$PROJECT_DIR$/app/models/Person.java" />
-        <option value="$PROJECT_DIR$/app/models/FastlegeOnske.java" />
         <option value="$PROJECT_DIR$/app/controllers/NavService.java" />
+        <option value="$PROJECT_DIR$/app/models/Kjonn.java" />
+        <option value="$PROJECT_DIR$/app/views/Application/index.html" />
+        <option value="$PROJECT_DIR$/app/controllers/Application.java" />
+        <option value="$PROJECT_DIR$/app/models/Fastlege.java" />
+        <option value="$PROJECT_DIR$/app/models/FastlegeOnske.java" />
+        <option value="$PROJECT_DIR$/app/models/Person.java" />
       </list>
     </option>
   </component>
@@ -262,6 +263,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastlege" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastlege" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -533,47 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="21" selection-start="60" selection-end="60" vertical-scroll-proportion="-1.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="14" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Kjonn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="12" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/FastlegeOnske.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Fastlege.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="7" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf/application.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="19" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
@@ -590,9 +576,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="52" selection-end="118" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Kjonn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="18" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Fastlege.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="30" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/FastlegeOnske.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="14" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="14" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="200" selection-end="200" vertical-scroll-proportion="0.19094767">
+        <state line="18" column="23" selection-start="269" selection-end="269" vertical-scroll-proportion="0.27581328">
           <folding />
         </state>
       </provider>

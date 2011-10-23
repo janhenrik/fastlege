@@ -1,15 +1,14 @@
 package models;
 
+import play.db.jpa.Model;
+
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import java.util.List;
 
 @Entity
-public class Person {
+public class Person extends Model {
 
-    @Id
-    public long id;
     public String navn;
     public String epost;
     @OneToMany

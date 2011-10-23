@@ -1,13 +1,12 @@
 package models;
 
+import play.db.jpa.Model;
+
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class FastlegeOnske {
-    @Id
-    public long id;
+public class FastlegeOnske extends Model {
     @ManyToOne
     public Fastlege fastlege;
 }

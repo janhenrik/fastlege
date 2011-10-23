@@ -1,5 +1,5 @@
 package models;
 
-public enum Kjonn {
+public enum Kjonn  {
     MANN, KVINNE
 }

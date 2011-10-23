@@ -1,12 +1,11 @@
 package models;
 
+import play.db.jpa.Model;
+
 import javax.persistence.Entity;
-import javax.persistence.Id;
 
 @Entity
-public class Fastlege {
-    @Id
-    public long id;
+public class Fastlege extends Model {
     public String navn;
     public Kjonn kjonn;
     public String legekontor;
