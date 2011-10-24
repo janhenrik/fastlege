@@ -59,22 +59,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Application.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="23" selection-start="269" selection-end="269" vertical-scroll-proportion="0.27581328">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="NavService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/NavService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="16" column="20" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,7 +71,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="52" selection-end="118" vertical-scroll-proportion="-1.875">
+            <state line="3" column="0" selection-start="52" selection-end="118" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -91,7 +80,7 @@
       <file leaf-file-name="Person.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="14" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
+            <state line="9" column="34" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,10 +88,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.conf" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.conf" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/conf/application.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="19" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
+            <state line="217" column="0" selection-start="6591" selection-end="6591" vertical-scroll-proportion="0.6757925">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dependencies.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/dependencies.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="25" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -112,9 +110,7 @@
         <entry file="file://$PROJECT_DIR$/app/models/FastlegeOnske.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="9" column="14" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -123,9 +119,7 @@
         <entry file="file://$PROJECT_DIR$/app/models/Fastlege.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="12" column="30" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -142,7 +136,7 @@
       <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -169,7 +163,6 @@
       <list>
         <option value="$PROJECT_DIR$/fastlege.iml" />
         <option value="$PROJECT_DIR$/app/models/Doctor.java" />
-        <option value="$PROJECT_DIR$/conf/application.conf" />
         <option value="$PROJECT_DIR$/app/controllers/NavService.java" />
         <option value="$PROJECT_DIR$/app/models/Kjonn.java" />
         <option value="$PROJECT_DIR$/app/views/Application/index.html" />
@@ -177,6 +170,8 @@
         <option value="$PROJECT_DIR$/app/models/Fastlege.java" />
         <option value="$PROJECT_DIR$/app/models/FastlegeOnske.java" />
         <option value="$PROJECT_DIR$/app/models/Person.java" />
+        <option value="$PROJECT_DIR$/conf/dependencies.yml" />
+        <option value="$PROJECT_DIR$/conf/application.conf" />
       </list>
     </option>
   </component>
@@ -213,9 +208,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Favorites" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -226,6 +218,20 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="External Libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastlege" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; 1.6 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -330,20 +336,23 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="project.structure.side.proportion" value="0.2" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -461,6 +470,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="8d04b142-860d-4725-9888-3517187a041d" name="Default" comment="" />
       <created>1319362091406</created>
       <updated>1319362091406</updated>
     </task>
@@ -470,26 +480,27 @@
     <frame x="201" y="22" width="1078" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24951456" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24878523" sideWeight="0.6706349" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -541,28 +552,12 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/fastlege.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/routes">
+    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="25" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/application.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="19" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
+        <state line="18" column="23" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -570,15 +565,27 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/NavService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="20" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="52" selection-end="118" vertical-scroll-proportion="-1.875">
+        <state line="3" column="0" selection-start="52" selection-end="118" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/FastlegeOnske.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="14" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Fastlege.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="30" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -590,36 +597,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Fastlege.java">
+    <entry file="file://$PROJECT_DIR$/app/views/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="30" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/FastlegeOnske.java">
+    <entry file="file://$PROJECT_DIR$/conf/routes">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="14" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="15" column="25" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="14" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
+        <state line="9" column="34" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
+    <entry file="file://$PROJECT_DIR$/conf/dependencies.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="23" selection-start="269" selection-end="269" vertical-scroll-proportion="0.27581328">
+        <state line="3" column="25" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/application.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="217" column="0" selection-start="6591" selection-end="6591" vertical-scroll-proportion="0.6757925">
           <folding />
         </state>
       </provider>
