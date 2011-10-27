@@ -23,6 +23,7 @@
       <library name="PlayFramework Dependencies">
         <CLASSES>
           <root url="file://$USER_HOME$/play-1.2.3/framework/lib" />
+          <root url="jar://$USER_HOME$/play-1.2.3/modules/fbconnect-0.5-patch/lib/play-fbconnect.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
