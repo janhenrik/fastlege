@@ -1,4 +1,15 @@
 # Application dependencies
 
 require:
-    play -> fbconnect 0.5
+    - play
+    - org.jsoup -> jsoup 1.6.1
+
+# This module exists here: https://github.com/janhenrik/play-fbconnect
+    - fbconnect-0.5-patch -> fbconnect-0.5-patch
+
+repositories:
+    - My modules:
+        type:       local
+        artifact:   ${application.path}/[module]
+        contains:
+            - fbconnect-0.5-patch
