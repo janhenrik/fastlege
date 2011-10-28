@@ -20,7 +20,7 @@ public class NavService {
 
     public List<Fastlege> parseHtml(String html) {
         Document doc = Jsoup.parse(html);
-        Elements pngs = doc.getelementselect("tr class=odd"); og even
+        Elements pngs = doc.getElementsByAttribute("tr class=odd"); // TODO this is not right
         for (int i = 0; i < pngs.size(); i++) {
             System.out.println(pngs.get(i).data());
         }
