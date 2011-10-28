@@ -1,16 +1,17 @@
 package controllers;
 
-import play.*;
-import play.mvc.*;
+import java.util.List;
 
-import java.util.*;
-
-import models.*;
+import models.Fastlege;
+import models.Fylke;
+import no.knowit.fastlege.service.FastlegeLeser;
+import play.mvc.Controller;
 
 public class Application extends Controller {
 
     public static void index() {
-        List <Fastlege> fastleger = Fastlege.findAll();
+    	FastlegeLeser fastlegeLeser = new FastlegeLeser();
+        List <Fastlege> fastleger = fastlegeLeser.hentAlleFastleger();
         render(fastleger);
     }
 

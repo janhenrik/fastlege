@@ -1,4 +1,14 @@
 # Application dependencies
 
 require:
-    play -> fbconnect 0.5
+    - play -> fbconnect 0.5
+    - org.apache.httpcomponents -> httpclient 4.1.2
+    - org.jsoup -> jsoup 1.6.1
+    - com.googlecode.lambdaj -> lambdaj 2.3.3
+    
+repositories:
+    - lambdaj:
+        type: iBiblio
+        root: "http://lambdaj.googlecode.com/svn/repo/releases/"
+        contains: 
+          - com.googlecode.lambdaj -> * 

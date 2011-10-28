@@ -1,5 +1,8 @@
+package no.knowit.fastlege.service;
 import controllers.NavService;
 import models.Fastlege;
+import no.knowit.fastlege.service.FastlegeLeser;
+
 import org.junit.Before;
 import org.junit.Test;
 import play.mvc.Http.Response;
@@ -11,19 +14,19 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
 
-public class NavServiceTest extends UnitTest {
+public class FastlegeLeserTest extends UnitTest {
 
-    private NavService navService;
+    private FastlegeLeser fastlegeLeser;
 
     @Before
     public void setUp() {
-        navService = new NavService();
+        fastlegeLeser = new FastlegeLeser();
 
     }
 
     @Test
     public void testNavService() throws IOException {
-        List<Fastlege> fastleger = navService.parseHtml(readFile("test/nav.html"));
+        List<Fastlege> fastleger = fastlegeLeser.parseHtml(readFile("test/nav.html"));
         assertNotNull(fastleger);
     }
 

@@ -1,19 +1,14 @@
 #{extends 'main.html' /}
 #{set title:'Fastlege' /}
 
-#{if session.user}
-    Welcome, ${session.user}
-
-
+<ul>
 #{list items:fastleger, as:'lege'}
-        ${lege.navn},
+<li>
+        ${lege.navn}
+</li>
 #{/list}
+</ul>
 
-
-#{/if}
-#{else}
-#{fbconnect.button label:'Login using your facebook account.', scope:'email' /}
-#{/else}
 
 
 
