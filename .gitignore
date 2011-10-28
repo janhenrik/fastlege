@@ -1,5 +1,24 @@
+# General temp files
+.DS_Store
+*.ser
+*.pyc
+
+# IDE and editors
+*~
+.idea
+nbproject
+eclipse
+.amateras
+.settings
+.classpath
+.project
+*.iml
+*.ipr
+*.iws
+
 /tmp
 /modules
 /lib
 /test-result
 /logs
+/out
