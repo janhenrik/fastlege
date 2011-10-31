@@ -78,7 +78,7 @@ public class FastlegeLeser {
 
 	private String hentLegeHtmlsidenForHeleLandet() {
 		WS.HttpResponse res = WS.url(GETURL).get();
-		return res.getString("UTF-8");
+		return res.getString("ISO-8859-1");
 	}
 
 	private String hentLegeHtmlsidenForFylke(Fylke fylke)
@@ -92,7 +92,7 @@ public class FastlegeLeser {
 		formparams.add(new BasicNameValuePair("sok", "Søk etter fastlege"));
 
 		UrlEncodedFormEntity entity = new UrlEncodedFormEntity(formparams,
-				"UTF-8");
+				"ISO-8859-1");
 
 		HttpPost httpPost = new HttpPost(POSTURL);
 		httpPost.setEntity(entity);
@@ -102,7 +102,7 @@ public class FastlegeLeser {
 					throws ClientProtocolException, IOException {
 				HttpEntity entity = response.getEntity();
 				if (entity != null) {
-					return EntityUtils.toString(entity, "UTF-8");
+					return EntityUtils.toString(entity, "ISO-8859-1");
 				} else {
 					return null;
 				}
