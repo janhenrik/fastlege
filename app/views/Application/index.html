@@ -4,14 +4,21 @@
 #{if session.user}
     Welcome, ${session.user}
 
-
-<ul>
-#{list items:fastleger, as:'lege'}
-<li>
-        ${lege.navn}
-</li>
-#{/list}
-</ul>
+<table>
+    #{list items:fastleger, as:'lege'}
+<tr>
+<td>
+    ${lege.navn}
+</td>
+<td>
+    ${lege.kjonn}
+</td>
+<td>
+    ${lege.antallLedig}
+</td>
+</tr>
+    #{/list}
+</table>
 
 
 #{/if}
