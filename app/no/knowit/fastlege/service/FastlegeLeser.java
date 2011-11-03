@@ -11,6 +11,7 @@ import java.util.List;
 import models.Fastlege;
 import models.Fylke;
 import models.Kjonn;
+import no.knowit.fastlege.utils.ElementToFastlegeConverter;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -113,28 +114,6 @@ public class FastlegeLeser {
 		return html;
 	}
 
-	class ElementToFastlegeConverter implements Converter<Element, Fastlege> {
-
-		public Fastlege convert(Element tr) {
-			Fastlege fastlege = new Fastlege();
-
-			Elements tds = tr.select("td");
-			fastlege.navn = tds.get(0).text();
-			fastlege.kjonn = (tds.get(1).text().equals("M") ? Kjonn.MANN
-					: Kjonn.KVINNE);
-			fastlege.legekontor = tds.get(2).text();
-			fastlege.tilgjengelig = (tds.get(3).text().equals("Ja") ? true
-					: false);
-			fastlege.adresse = tds.get(4).text();
-			fastlege.postnummerOgSted = tds.get(5).text();
-			fastlege.gruppepraksis = (tds.get(6).text().equals("Ja") ? true
-					: false);
-			fastlege.fellesliste = (tds.get(7).text().equals("Ja") ? true
-					: false);
-			fastlege.antallPaaListen = Integer.parseInt(tds.get(8).text());
-			fastlege.antallLedig = Integer.parseInt(tds.get(9).text());
-			return fastlege;
-		}
-	}
+	
 
 }
