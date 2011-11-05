@@ -5,10 +5,23 @@
         <title>#{get 'title' /}</title>
         <meta charset="${_response_encoding}">
         <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+        <style type="text/css" title="currentStyle">
+			@import "/public/stylesheets/demo_page.css";
+			@import "/public/stylesheets/demo_table.css";
+		</style>
         #{get 'moreStyles' /}
         <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+        
+
         <script src="@{'/public/javascripts/jquery-1.5.2.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <script src="http://datatables.net/download/build/jquery.dataTables.nightly.js"></script>
+		<script type="text/javascript"> 
+$(document).ready(function() {
+	$('#fastlegene').dataTable();
+} );
+		</script>        
         #{get 'moreScripts' /}
+
     </head>
     <body>
         #{doLayout /}

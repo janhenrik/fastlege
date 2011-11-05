@@ -1,32 +1,39 @@
-#{extends 'main.html' /}
-#{set title:'Fastlege' /}
-
+#{extends 'main.html' /} 
+#{set title:'Fastlege' /} 
 #{if session.user}
-    Welcome, ${session.user}
-
-<table>
-    #{list items:fastleger, as:'lege'}
-<tr>
-<td>
-    ${lege.navn}
-</td>
-<td>
-    ${lege.kjonn}
-</td>
-<td>
-    ${lege.antallLedig}
-</td>
-<td>
-    ${lege.adresse}
-</td>
-</tr>
-    #{/list}
+<p>
+Welcome, ${session.user}
+</p>
+<p>
+<div id="demo">
+<table id="fastlegene" class="display">
+	<thead>
+		<tr>
+			<th>Navn</th>
+			<th>Kj&oslash;nn</th>
+			<th>Adresse</th>
+			<th>Antall ledige</th>
+		</tr>
+	</thead>
+	<tbody>
+		#{list items:fastleger, as:'lege'}
+		<tr>
+			<td>${lege.navn}</td>
+			<td>${lege.kjonn}</td>
+			<td>${lege.adresse}</td>
+			<td>${lege.antallLedig}</td>
+		</tr>
+		#{/list}
+	</tbody>
 </table>
+</div>
+</p>
 
-
-#{/if}
+#{/if} 
 #{else}
-#{fbconnect.button label:'Login using your facebook account.', scope:'email' /}
+<p> 
+#{fbconnect.button label:'Login using your facebook account.', scope:'email' /} 
+</p>
 #{/else}
 
 
