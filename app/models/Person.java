@@ -1,14 +1,19 @@
 package models;
 
-import com.google.gson.JsonObject;
-import play.db.jpa.Model;
-import play.mvc.Scope;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
-import java.util.List;
+import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
+
+import play.db.jpa.Model;
+import play.mvc.Scope;
+
+import com.google.gson.JsonObject;
 
 @Entity
+@Table(name = "Person", uniqueConstraints = @UniqueConstraint(columnNames = { "epost" }))
 public class Person extends Model {
 
 	public String navn;

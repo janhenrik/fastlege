@@ -14,16 +14,34 @@
         
 
         <script src="@{'/public/javascripts/jquery-1.5.2.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
-        <script src="http://datatables.net/download/build/jquery.dataTables.nightly.js"></script>
+        <script src="@{'/public/javascripts/jquery.dataTables.min.js'}"></script>
 		<script type="text/javascript"> 
-$(document).ready(function() {
-	$('#fastlegene').dataTable();
-} );
+		$(document).ready(function() {
+		    $('#varslingene').dataTable( {
+		        "bPaginate": false,
+		        "bLengthChange": true,
+		        "bFilter": false,
+		        "bSort": true,
+		        "bInfo": false,
+		        "bAutoWidth": true
+		    } );
+		} );
+		
+		$(document).ready(function() {
+		    $('#fastlegene').dataTable( {
+		        "bPaginate": true,
+		        "bLengthChange": false,
+		        "bFilter": true,
+		        "bSort": true,
+		        "bInfo": false,
+		        "bAutoWidth": true
+		    } );
+		} );
 		</script>        
         #{get 'moreScripts' /}
 
     </head>
-    <body>
+    <body id="dt_example">
         #{doLayout /}
     </body>
 </html>

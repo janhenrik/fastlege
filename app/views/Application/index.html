@@ -1,41 +1,69 @@
 #{extends 'main.html' /} 
-#{set title:'Fastlege' /} 
-#{if session.user}
+#{set title:'Fastlege' /}
+<div id="ramme">
+<p>Hei ${bruker.navn}!</p>
 <p>
-Welcome, ${session.user}
-</p>
-<p>
+<h1>Dine varslinger</h1>
 <div id="demo">
-<table id="fastlegene" class="display">
-	<thead>
-		<tr>
-			<th>Navn</th>
-			<th>Kj&oslash;nn</th>
-			<th>Adresse</th>
-			<th>Antall ledige</th>
-		</tr>
-	</thead>
-	<tbody>
-		#{list items:fastleger, as:'lege'}
-		<tr>
-			<td>${lege.navn}</td>
-			<td>${lege.kjonn}</td>
-			<td>${lege.adresse}</td>
-			<td>${lege.antallLedig}</td>
-		</tr>
-		#{/list}
-	</tbody>
-</table>
+	<table id="varslingene" class="display" cellpadding="0"
+		cellspacing="0" border="0">
+		<thead>
+			<tr>
+				<th>Navn</th>
+				<th>Kj&oslash;nn</th>
+				<th>Antall ledige</th>
+			</tr>
+		</thead>
+		<tbody>
+			#{list items:bruker.fastlegeOnsker?.fastlege, as:'lege'}
+			<tr>
+				<td>${lege.navn}</td>
+				<td>${lege.kjonn}</td>
+				<td>${lege.antallLedig}</td>
+			</tr>
+			#{/list}
+		</tbody>
+	</table>
 </div>
+
 </p>
+<p>
+<h1>Velg nye varslinger</h1>
 
-#{/if} 
-#{else}
-<p> 
-#{fbconnect.button label:'Login using your facebook account.', scope:'email' /} 
+
+#{form @Application.velgLeger()}
+<div id="demo">
+	<table id="fastlegene" class="display" cellpadding="0" cellspacing="0"
+		border="0">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Navn</th>
+				<th>Kj&oslash;nn</th>
+				<th>Adresse</th>
+				<th>Antall ledige</th>
+			</tr>
+		</thead>
+		<tbody>
+			#{list items:fastleger, as:'lege'}
+			<tr>
+				<td><input type="checkbox" name="fastlegeId" value="${lege.id}" />
+				</td>
+				<td>${lege.navn}</td>
+				<td>${lege.kjonn}</td>
+				<td>${lege.adresse}</td>
+				<td>${lege.antallLedig}</td>
+			</tr>
+			#{/list}
+		</tbody>
+	</table>
+</div>
+<br/>
+<input type="submit" value="F&aring; varsel n&aring;r lege er ledig" /> 
+#{/form}
+
+
 </p>
-#{/else}
-
-
+</div>
 
 

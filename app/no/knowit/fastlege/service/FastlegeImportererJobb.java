@@ -10,7 +10,7 @@ import play.jobs.On;
 import play.jobs.OnApplicationStart;
 
 @OnApplicationStart
-@On("0 * * * * ?")
+@On("0 1/2 * * * ?")
 public class FastlegeImportererJobb extends Job {
 
 	public void doJob() {
@@ -69,15 +69,16 @@ public class FastlegeImportererJobb extends Job {
 			if (!eksisterendeLegeFunnet) {
 				eksisterendeLege.gyldig = false;
 				eksisterendeLege.bleUgyldigDato = new Date();
-				// eksisterendeLege.save();
-				// Dette er ikke nødvendig i vanlig Hibernate..
+				eksisterendeLege.save();// Dette er ikke nødvendig i vanlig
+										// Hibernate..
+
 			} else {
-				// Innebærer at en ugyldig lege kan bli gyldig igjen.. Vet ikke
-				// om det er ønskelig..
+				// Innebærer at en ugyldig lege kan bli gyldig igjen
 				eksisterendeLege.gyldig = true;
 				eksisterendeLege.bleUgyldigDato = null;
-				// eksisterendeLege.save();
-				// Dette er ikke nødvendig i vanlig Hibernate..
+				eksisterendeLege.save(); // Dette er ikke nødvendig i vanlig
+											// Hibernate..
+
 			}
 		}
 	}

@@ -10,6 +10,11 @@
 	background-color: #fff;
 }
 
+#dt_example #ramme {
+	width: 800px;
+	margin: 5px;
+	padding: 0;
+}
 
 #dt_example #container {
 	width: 800px;
