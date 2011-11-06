@@ -16,45 +16,39 @@ import play.mvc.With;
 public class Application extends Controller {
 
 	public static void index() {
+		Person bruker = hentBruker();
+
 		List<Fastlege> fastleger = Fastlege.find("gyldig = true").fetch();
 		System.out.println("Har hentet opp " + fastleger.size()
 				+ " leger fra db");
 		renderArgs.put("fastleger", fastleger);
-		
-		String epost = Scope.Session.current().get("user");
-		Person bruker = hentEllerLagBruker(epost);
-		bruker.navn = "Hågen P";
+
 		renderArgs.put("bruker", bruker);
-		
+
 		render();
 	}
 
-	private static Person hentEllerLagBruker(String epost) {
-		Person person = Person.find("byEpost", epost).first();
-		if (person == null) {
-			person = new Person();
-			person.epost = epost;
-			person.save();
-		}
-		return person;
-	}
-
 	public static void velgLeger(List<Long> fastlegeId) {
-		String epost = Scope.Session.current().get("user");
-		Person bruker = hentEllerLagBruker(epost);
-		
+		Person bruker = hentBruker();
+
 		for (Long id : fastlegeId) {
 			System.out.println("Mottok: " + id);
-			//TODO: Dette er kanskje litt anemisk... Skriv om til DDD.
-			Fastlege fastlege = Fastlege.<Fastlege>findById(id);
+			// TODO: Dette er kanskje litt anemisk...? Skriv om til DDD.
+			Fastlege fastlege = Fastlege.<Fastlege> findById(id);
 			FastlegeOnske onske = new FastlegeOnske();
 			onske.fastlege = fastlege;
 			onske.save();
 			bruker.fastlegeOnsker.add(onske);
 			bruker.save();
-			
+
 			index();
 		}
+	}
+
+	private static Person hentBruker() {
+		String epost = Scope.Session.current().get("user");
+		Person bruker = Person.find("byEpost", epost).first();
+		return bruker;
 	}
 
 	public static void velgLege(Long id, String navn) {

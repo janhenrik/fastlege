@@ -23,10 +23,12 @@ public class Person extends Model {
 
 	public static void facebookOAuthCallback(JsonObject data) {
 		String epost = data.get("email").getAsString();
+		String navn = data.get("name").getAsString();
 		Person person = find("epost=?", epost).first();
 		if (person == null) {
 			person = new Person();
 			person.epost = epost;
+			person.navn = navn;
 			person.save();
 		}
 		Scope.Session.current().put("user", person.epost);
